@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslocoDirective } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-home',
   standalone: true,
+  imports: [TranslocoDirective],
   template: `
     <div>
       <a href="https://analogjs.org/" target="_blank">
@@ -10,7 +12,9 @@ import { Component } from '@angular/core';
       </a>
     </div>
 
-    <h2>Analog</h2>
+    <ng-container *transloco="let t">
+      <h2>{{ t('greeting') }}</h2>
+    </ng-container>
 
     <h3>The fullstack meta-framework for Angular!</h3>
 

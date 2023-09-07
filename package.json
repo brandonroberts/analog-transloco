@@ -25,6 +25,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/platform-server": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@ngneat/transloco": "^5.0.7",
     "@nx/angular": "^16.7.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
@@ -42,8 +43,8 @@
     "@angular/cli": "^16.2.0",
     "@angular/compiler-cli": "^16.2.0",
     "@nx/vite": "^16.7.0",
-    "nx": "^16.7.0",
     "jsdom": "^22.1.0",
+    "nx": "^16.7.0",
     "typescript": "~5.0.2",
     "vite": "^4.4.8",
     "vitest": "^0.32.0"
