@@ -9,10 +9,19 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: ['es2020'],
   },
+  ssr: {
+    noExternal: mode === 'production' ? ['flat'] : [],
+  },
   resolve: {
     mainFields: ['module'],
   },
-  plugins: [analog()],
+  plugins: [
+    analog({
+      prerender: {
+        routes: ['/', '/home']
+      }
+    })
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
